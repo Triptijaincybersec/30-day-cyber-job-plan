@@ -1,0 +1,28 @@
+{
+  "start_date": "2026-04-25",
+  "daily_hours": "06:00-18:00 IST",
+  "weeks": [
+    {
+      "week": 1,
+      "theme": "Foundation + Tools",
+      "days": {
+        "2026-04-25": {
+          "title": "Day 1: Setup",
+          "slots": {
+            "06-08": "Install Git + GitHub. Watch NetworkChuck Git video",
+            "08-10": "Install VirtualBox + Kali Linux ISO. Boot VM",
+            "10-12": "CCNA Revise: OSI, TCP/IP, Subnetting. 1-page notes",
+            "13-15": "Linux: pwd,ls,cd,mkdir,rm,cp,mv in Kali",
+            "15-17": "Create repo network-notes. Push CCNA notes",
+            "17-18": "Plan Day 2. Change LinkedIn headline"
+          }
+        },
+        "2026-04-26": {"title": "Day 2: Rest", "slots": {"06-08": "Rest", "08-10": "YouTube: SOC Analyst day in life", "13-15": "Write 5 lines: Why cyber for SOP", "15-17": "Revise Linux commands", "17-18": "Week 1 review"}},
+        "2026-04-27": {"title": "Day 3: Network + Tools", "slots": {"06-08": "IPv4 vs IPv6, NAT, DHCP", "08-10": "Wireshark: capture wifi, find DNS/HTTP", "10-12": "Nmap: scan localhost", "13-15": "Naukri new profile", "15-17": "Resume draft in Docs", "17-18": "Apply 2 IT Support jobs"}},
+        "2026-04-28": {"title": "Day 4: Linux + CCNA", "slots": {"06-08": "Linux: users,sudo,chmod,chown", "08-10": "CCNA: VLAN,ACL,RIP,OSPF", "10-12": "Nmap: scan router -sV", "13-15": "Git: nmap-scans repo push", "15-17": "LinkedIn About section", "17-18": "Apply 3 Network Engineer"}},
+        "2026-04-29": {"title": "Day 5: Resume + Project 1", "slots": {"06-08": "Resume v1 complete", "08-10": "Firewall: Palo Alto/Fortinet basics", "10-12": "Project 1: Nmap home network map", "13-15": "Document IP,MAC,Ports in PDF", "15-17": "Push Project 1 + README", "17-18": "Apply 3 SOC Intern"}},
+        "2026-04-30": {"title": "Day 6: Python + Apply", "slots": {"06-08": "Python: print,variables,loops on replit", "08-10": "CCNA: VPN,IPSec,SSL/TLS", "10-12": "Project 1: Add risks section", "13-15": "LinkedIn: Connect 10 SOC people", "15-17": "Cover letter template", "17-18": "Apply 5 jobs + Excel track"}}
+      }
+    }
+  ]
+}
