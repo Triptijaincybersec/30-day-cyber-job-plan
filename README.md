@@ -13,7 +13,7 @@
 Update this daily. Commit with message: `Day X: Completed`
 
 ### WEEK 1: FOUNDATION + TOOLS
-- [ ] **Day 1 - Apr 25 Sat**: Git + Kali + CCNA + Linux basics + First repo
+- [x] **Day 1 - Apr 25 Sat**: Git + Kali + CCNA + Linux basics + First repo
 - [ ] **Day 2 - Apr 26 Sun**: Rest + SOC research + Why cyber 5 lines
 - [ ] **Day 3 - Apr 27 Mon**: IPv4/IPv6 + Wireshark + Nmap + Naukri + Resume draft
 - [ ] **Day 4 - Apr 28 Tue**: Linux users + VLAN/ACL + Nmap router + Git + LinkedIn About
