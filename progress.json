@@ -5,7 +5,7 @@
       "title": "Week 1 - Setup + CCNA Basics",
       "days": {
         "2026-04-25": {
-          "title": "Day 1: Setup",
+          "title": "Setup",
           "completed": false,
           "slots": {
             "06-08": {"task": "Install Git + GitHub. Watch NetworkChuck Git video", "done": true},
@@ -17,19 +17,17 @@
           }
         },
         "2026-04-26": {
-          "title": "Day 2: Rest + Research",
+          "title": "Rest + Research",
           "completed": false,
           "slots": {
-            "06-08": {"task": "Rest / Sleep in. No screens first 30 min", "done": false},
-            "08-10": {"task": "YouTube: 'A Day in Life of SOC Analyst' - take 3 notes", "done": false},
-            "10-12": {"task": "Research 3 entry cyber roles: SOC L1, IT Support, NOC", "done": false},
-            "13-15": {"task": "Write 5 lines: Why cybersecurity for SOP/LinkedIn", "done": false},
-            "15-17": {"task": "Revise Linux: pwd, ls, cd, mkdir, rm, cp, mv - do in Kali", "done": false},
-            "17-18": {"task": "Week 1 review: List wins + blockers. Plan Day 3", "done": false}
+            "09-11": {"task": "Sleep in + Light review of week", "done": false},
+            "11-13": {"task": "YouTube: 'A Day in Life of SOC Analyst' - 3 notes", "done": false},
+            "15-17": {"task": "Research 3 cyber roles: SOC L1, IT Support, NOC", "done": false},
+            "17-19": {"task": "Write 5 lines: Why cybersecurity for LinkedIn", "done": false}
           }
         },
         "2026-04-27": {
-          "title": "Day 3: Linux + VLANs",
+          "title": "Linux + VLANs",
           "completed": false,
           "slots": {
             "06-08": {"task": "Linux: chmod, chown, grep, find, pipes |, >", "done": false},
@@ -41,7 +39,7 @@
           }
         },
         "2026-04-28": {
-          "title": "Day 4: Users + ACLs",
+          "title": "Users + ACLs",
           "completed": false,
           "slots": {
             "06-08": {"task": "Linux: useradd, passwd, sudo, groups", "done": false},
@@ -53,7 +51,7 @@
           }
         },
         "2026-04-29": {
-          "title": "Day 5: Wireshark + STP",
+          "title": "Wireshark + STP",
           "completed": false,
           "slots": {
             "06-08": {"task": "Wireshark: Capture ping, filter ICMP", "done": false},
@@ -65,7 +63,7 @@
           }
         },
         "2026-04-30": {
-          "title": "Day 6: Review + Push",
+          "title": "Review + Push",
           "completed": false,
           "slots": {
             "06-08": {"task": "Review all Week 1 notes", "done": false},
@@ -75,15 +73,9 @@
             "15-17": {"task": "Week 1 retro: What worked/what didn't", "done": false},
             "17-18": {"task": "Plan Week 2", "done": false}
           }
-        }
-      }
-    },
-    {
-      "week": 2,
-      "title": "Week 2 - Firewall + SIEM Intro",
-      "days": {
+        },
         "2026-05-01": {
-          "title": "Day 7: pfSense Install",
+          "title": "pfSense Install",
           "completed": false,
           "slots": {
             "06-08": {"task": "Download pfSense ISO. Create VM 2GB RAM", "done": false},
@@ -93,9 +85,15 @@
             "15-17": {"task": "Document pfSense setup in GitHub", "done": false},
             "17-18": {"task": "Plan Day 8", "done": false}
           }
-        },
+        }
+      }
+    },
+    {
+      "week": 2,
+      "title": "Week 2 - Firewall + SIEM Intro",
+      "days": {
         "2026-05-02": {
-          "title": "Day 8: Firewall Rules",
+          "title": "Firewall Rules",
           "completed": false,
           "slots": {
             "06-08": {"task": "pfSense: Block ICMP from WAN", "done": false},
@@ -107,7 +105,17 @@
           }
         },
         "2026-05-03": {
-          "title": "Day 9: Splunk Install",
+          "title": "Week Review",
+          "completed": false,
+          "slots": {
+            "09-11": {"task": "Review pfSense rules + CCNA notes", "done": false},
+            "11-13": {"task": "Watch 1 Splunk intro video", "done": false},
+            "15-17": {"task": "Update LinkedIn with firewall learning", "done": false},
+            "17-18": {"task": "Plan next week", "done": false}
+          }
+        },
+        "2026-05-04": {
+          "title": "Splunk Install",
           "completed": false,
           "slots": {
             "06-08": {"task": "Install Splunk Free on Kali/Ubuntu VM", "done": false},
@@ -115,11 +123,11 @@
             "10-12": {"task": "Splunk: Search 'failed password'", "done": false},
             "13-15": {"task": "CCNA: OSPF single area basics", "done": false},
             "15-17": {"task": "Create Splunk dashboard screenshot", "done": false},
-            "17-18": {"task": "Plan Day 10", "done": false}
+            "17-18": {"task": "Plan Day 11", "done": false}
           }
         },
-        "2026-05-04": {
-          "title": "Day 10: SIEM Queries",
+        "2026-05-05": {
+          "title": "SIEM Queries",
           "completed": false,
           "slots": {
             "06-08": {"task": "Splunk: Stats count by src_ip", "done": false},
@@ -127,11 +135,11 @@
             "10-12": {"task": "pfSense: Send logs to Splunk via syslog", "done": false},
             "13-15": {"task": "CCNA: EIGRP basics vs OSPF", "done": false},
             "15-17": {"task": "LinkedIn: Post 'Learning SIEM'", "done": false},
-            "17-18": {"task": "Plan Day 11", "done": false}
+            "17-18": {"task": "Plan Day 12", "done": false}
           }
         },
-        "2026-05-05": {
-          "title": "Day 11: MITRE + Logs",
+        "2026-05-06": {
+          "title": "MITRE + Logs",
           "completed": false,
           "slots": {
             "06-08": {"task": "MITRE ATT&CK: Read T1078 Valid Accounts", "done": false},
@@ -139,11 +147,11 @@
             "10-12": {"task": "Wireshark: Find SYN scan pattern", "done": false},
             "13-15": {"task": "Resume: Add pfSense + Splunk projects", "done": false},
             "15-17": {"task": "GitHub: Create security-lab repo", "done": false},
-            "17-18": {"task": "Plan Day 12", "done": false}
+            "17-18": {"task": "Plan Day 13", "done": false}
           }
         },
-        "2026-05-06": {
-          "title": "Day 12: Week 2 Review",
+        "2026-05-07": {
+          "title": "Week 2 Ship",
           "completed": false,
           "slots": {
             "06-08": {"task": "Review pfSense + Splunk notes", "done": false},
@@ -153,6 +161,18 @@
             "15-17": {"task": "Week 2 retro + Week 3 plan", "done": false},
             "17-18": {"task": "Rest", "done": false}
           }
+        },
+        "2026-05-08": {
+          "title": "IR Process",
+          "completed": false,
+          "slots": {
+            "06-08": {"task": "NIST IR: Preparation phase study", "done": false},
+            "08-10": {"task": "Create IR contact list template", "done": false},
+            "10-12": {"task": "CCNA: BGP basics", "done": false},
+            "13-15": {"task": "AWS: Create free tier account", "done": false},
+            "15-17": {"task": "Document IR process in GitHub", "done": false},
+            "17-18": {"task": "Plan Day 15", "done": false}
+          }
         }
       }
     },
@@ -160,24 +180,35 @@
       "week": 3,
       "title": "Week 3 - IR + Cloud Basics",
       "days": {
-        "2026-05-07": {"title": "Day 13: IR Process", "completed": false, "slots": {"06-08": {"task": "NIST IR: Preparation phase study", "done": false}, "08-10": {"task": "Create IR contact list template", "done": false}, "10-12": {"task": "CCNA: BGP basics", "done": false}, "13-15": {"task": "AWS: Create free tier account", "done": false}, "15-17": {"task": "Document IR process in GitHub", "done": false}, "17-18": {"task": "Plan Day 14", "done": false}}},
-        "2026-05-08": {"title": "Day 14: Detection + Analysis", "completed": false, "slots": {"06-08": {"task": "NIST IR: Detection & Analysis", "done": false}, "08-10": {"task": "Simulate brute force on Kali SSH", "done": false}, "10-12": {"task": "Splunk: Detect brute force alert", "done": false}, "13-15": {"task": "AWS: Launch EC2 t2.micro", "done": false}, "15-17": {"task": "Write IR report template", "done": false}, "17-18": {"task": "Plan Day 15", "done": false}}},
-        "2026-05-09": {"title": "Day 15: Containment", "completed": false, "slots": {"06-08": {"task": "NIST IR: Containment, Eradication", "done": false}, "08-10": {"task": "iptables: Block attacking IP", "done": false}, "10-12": {"task": "pfSense: Create block alias", "done": false}, "13-15": {"task": "AWS: Security Groups basics", "done": false}, "15-17": {"task": "Update GitHub with IR playbook", "done": false}, "17-18": {"task": "Plan Day 16", "done": false}}},
-        "2026-05-10": {"title": "Day 16: Recovery + Azure", "completed": false, "slots": {"06-08": {"task": "NIST IR: Recovery + Lessons Learned", "done": false}, "08-10": {"task": "Azure: Create free account", "done": false}, "10-12": {"task": "Azure: Create Resource Group + VM", "done": false}, "13-15": {"task": "CCNA: IPv6 basics", "done": false}, "15-17": {"task": "LinkedIn: 'Learning Cloud Security'", "done": false}, "17-18": {"task": "Plan Day 17", "done": false}}},
-        "2026-05-11": {"title": "Day 17: Cloud Logging", "completed": false, "slots": {"06-08": {"task": "AWS: Enable CloudTrail", "done": false}, "08-10": {"task": "Azure: Enable Activity Log", "done": false}, "10-12": {"task": "Splunk: Research AWS/Azure add-on", "done": false}, "13-15": {"task": "Resume: Add Cloud section", "done": false}, "15-17": {"task": "Apply to 3 Cloud SOC jobs", "done": false}, "17-18": {"task": "Plan Day 18", "done": false}}},
-        "2026-05-12": {"title": "Day 18: Week 3 Review", "completed": false, "slots": {"06-08": {"task": "Review IR + Cloud notes", "done": false}, "08-10": {"task": "Record Loom: 'IR Process explained'", "done": false}, "10-12": {"task": "GitHub: Push all Week 3 docs", "done": false}, "13-15": {"task": "LinkedIn: Post Loom + tag #cybersecurity", "done": false}, "15-17": {"task": "Week 3 retro + Week 4 plan", "done": false}, "17-18": {"task": "Rest", "done": false}}}
+        "2026-05-09": {"title": "Detection + Analysis", "completed": false, "slots": {"06-08": {"task": "NIST IR: Detection & Analysis", "done": false}, "08-10": {"task": "Simulate brute force on Kali SSH", "done": false}, "10-12": {"task": "Splunk: Detect brute force alert", "done": false}, "13-15": {"task": "AWS: Launch EC2 t2.micro", "done": false}, "15-17": {"task": "Write IR report template", "done": false}, "17-18": {"task": "Plan Day 16", "done": false}}},
+        "2026-05-10": {"title": "Weekend Review", "completed": false, "slots": {"09-11": {"task": "Review NIST IR phases", "done": false}, "11-13": {"task": "AWS Free Tier: Explore console", "done": false}, "15-17": {"task": "Document 1 IR playbook in GitHub", "done": false}, "17-18": {"task": "Plan next week", "done": false}}},
+        "2026-05-11": {"title": "Containment", "completed": false, "slots": {"06-08": {"task": "NIST IR: Containment, Eradication", "done": false}, "08-10": {"task": "iptables: Block attacking IP", "done": false}, "10-12": {"task": "pfSense: Create block alias", "done": false}, "13-15": {"task": "AWS: Security Groups basics", "done": false}, "15-17": {"task": "Update GitHub with IR playbook", "done": false}, "17-18": {"task": "Plan Day 18", "done": false}}},
+        "2026-05-12": {"title": "Recovery + Azure", "completed": false, "slots": {"06-08": {"task": "NIST IR: Recovery + Lessons Learned", "done": false}, "08-10": {"task": "Azure: Create free account", "done": false}, "10-12": {"task": "Azure: Create Resource Group + VM", "done": false}, "13-15": {"task": "CCNA: IPv6 basics", "done": false}, "15-17": {"task": "LinkedIn: 'Learning Cloud Security'", "done": false}, "17-18": {"task": "Plan Day 19", "done": false}}},
+        "2026-05-13": {"title": "Cloud Logging", "completed": false, "slots": {"06-08": {"task": "AWS: Enable CloudTrail", "done": false}, "08-10": {"task": "Azure: Enable Activity Log", "done": false}, "10-12": {"task": "Splunk: Research AWS/Azure add-on", "done": false}, "13-15": {"task": "Resume: Add Cloud section", "done": false}, "15-17": {"task": "Apply to 3 Cloud SOC jobs", "done": false}, "17-18": {"task": "Plan Day 20", "done": false}}},
+        "2026-05-14": {"title": "Week 3 Review", "completed": false, "slots": {"06-08": {"task": "Review IR + Cloud notes", "done": false}, "08-10": {"task": "Record Loom: 'IR Process explained'", "done": false}, "10-12": {"task": "GitHub: Push all Week 3 docs", "done": false}, "13-15": {"task": "LinkedIn: Post Loom + tag #cybersecurity", "done": false}, "15-17": {"task": "Week 3 retro + Week 4 plan", "done": false}, "17-18": {"task": "Rest", "done": false}}},
+        "2026-05-15": {"title": "Interview Prep 1", "completed": false, "slots": {"06-08": {"task": "Top 20 SOC L1 interview Qs", "done": false}, "08-10": {"task": "STAR method: Write 3 stories", "done": false}, "10-12": {"task": "Mock: Record 'Tell me about yourself'", "done": false}, "13-15": {"task": "CCNA: Final revision flashcards", "done": false}, "15-17": {"task": "GitHub: Polish README for all repos", "done": false}, "17-18": {"task": "Plan Day 22", "done": false}}}
       }
     },
     {
       "week": 4,
       "title": "Week 4 - Interview + Portfolio",
       "days": {
-        "2026-05-13": {"title": "Day 19: Interview Prep 1", "completed": false, "slots": {"06-08": {"task": "Top 20 SOC L1 interview Qs", "done": false}, "08-10": {"task": "STAR method: Write 3 stories", "done": false}, "10-12": {"task": "Mock: Record 'Tell me about yourself'", "done": false}, "13-15": {"task": "CCNA: Final revision flashcards", "done": false}, "15-17": {"task": "GitHub: Polish README for all repos", "done": false}, "17-18": {"task": "Plan Day 20", "done": false}}},
-        "2026-05-14": {"title": "Day 20: Interview Prep 2", "completed": false, "slots": {"06-08": {"task": "Scenario: How to handle phishing alert", "done": false}, "08-10": {"task": "Scenario: Brute force investigation steps", "done": false}, "10-12": {"task": "Mock: Friend asks TCP vs UDP", "done": false}, "13-15": {"task": "Resume: Final version PDF", "done": false}, "15-17": {"task": "LinkedIn: Turn on 'Open to Work'", "done": false}, "17-18": {"task": "Plan Day 21", "done": false}}},
-        "2026-05-15": {"title": "Day 21: Portfolio Site", "completed": false, "slots": {"06-08": {"task": "GitHub Pages: Create portfolio site", "done": false}, "08-10": {"task": "Add: Projects, Skills, Contact", "done": false}, "10-12": {"task": "Add: Loom video embeds", "done": false}, "13-15": {"task": "Buy domain OR use github.io link", "done": false}, "15-17": {"task": "Share portfolio on LinkedIn", "done": false}, "17-18": {"task": "Plan Day 22", "done": false}}},
-        "2026-05-16": {"title": "Day 22: Apply Sprint", "completed": false, "slots": {"06-08": {"task": "Apply: 5 jobs Naukri", "done": false}, "08-10": {"task": "Apply: 5 jobs LinkedIn", "done": false}, "10-12": {"task": "Message 3 recruiters on LinkedIn", "done": false}, "13-15": {"task": "Tailor resume for 1 job", "done": false}, "15-17": {"task": "Track applications in spreadsheet", "done": false}, "17-18": {"task": "Plan Day 23", "done": false}}},
-        "2026-05-17": {"title": "Day 23: Mock Interview", "completed": false, "slots": {"06-08": {"task": "Full mock: 30min with friend/ChatGPT voice", "done": false}, "08-10": {"task": "Review recording + note gaps", "done": false}, "10-12": {"task": "Fix gaps: Study weak topics 2hr", "done": false}, "13-15": {"task": "Update LinkedIn posts with learnings", "done": false}, "15-17": {"task": "Send 5 connection requests", "done": false}, "17-18": {"task": "Plan Day 24", "done": false}}},
-        "2026-05-18": {"title": "Day 24: 30-Day Ship", "completed": false, "slots": {"06-08": {"task": "Final GitHub push: All notes clean", "done": false}, "08-10": {"task": "Record '30 Day Journey' Loom recap", "done": false}, "10-12": {"task": "LinkedIn: Post recap + thank supporters", "done": false}, "13-15": {"task": "Plan Month 2: Certs or Job focus", "done": false}, "15-17": {"task": "Celebrate: You shipped 30 days", "done": false}, "17-18": {"task": "Rest", "done": false}}}
+        "2026-05-16": {"title": "Interview Prep 2", "completed": false, "slots": {"06-08": {"task": "Scenario: How to handle phishing alert", "done": false}, "08-10": {"task": "Scenario: Brute force investigation steps", "done": false}, "10-12": {"task": "Mock: Friend asks TCP vs UDP", "done": false}, "13-15": {"task": "Resume: Final version PDF", "done": false}, "15-17": {"task": "LinkedIn: Turn on 'Open to Work'", "done": false}, "17-18": {"task": "Plan Day 23", "done": false}}},
+        "2026-05-17": {"title": "Sunday Review", "completed": false, "slots": {"09-11": {"task": "Review interview Q&A notes", "done": false}, "11-13": {"task": "Practice 2 STAR stories out loud", "done": false}, "15-17": {"task": "Research 5 companies hiring", "done": false}, "17-18": {"task": "Plan application week", "done": false}}},
+        "2026-05-18": {"title": "Portfolio Site", "completed": false, "slots": {"06-08": {"task": "GitHub Pages: Create portfolio site", "done": false}, "08-10": {"task": "Add: Projects, Skills, Contact", "done": false}, "10-12": {"task": "Add: Loom video embeds", "done": false}, "13-15": {"task": "Buy domain OR use github.io link", "done": false}, "15-17": {"task": "Share portfolio on LinkedIn", "done": false}, "17-18": {"task": "Plan Day 25", "done": false}}},
+        "2026-05-19": {"title": "Apply Sprint", "completed": false, "slots": {"06-08": {"task": "Apply: 5 jobs Naukri", "done": false}, "08-10": {"task": "Apply: 5 jobs LinkedIn", "done": false}, "10-12": {"task": "Message 3 recruiters on LinkedIn", "done": false}, "13-15": {"task": "Tailor resume for 1 job", "done": false}, "15-17": {"task": "Track applications in spreadsheet", "done": false}, "17-18": {"task": "Plan Day 26", "done": false}}},
+        "2026-05-20": {"title": "Mock Interview", "completed": false, "slots": {"06-08": {"task": "Full mock: 30min with friend/ChatGPT voice", "done": false}, "08-10": {"task": "Review recording + note gaps", "done": false}, "10-12": {"task": "Fix gaps: Study weak topics 2hr", "done": false}, "13-15": {"task": "Update LinkedIn posts with learnings", "done": false}, "15-17": {"task": "Send 5 connection requests", "done": false}, "17-18": {"task": "Plan Day 27", "done": false}}},
+        "2026-05-21": {"title": "30-Day Ship", "completed": false, "slots": {"06-08": {"task": "Final GitHub push: All notes clean", "done": false}, "08-10": {"task": "Record '30 Day Journey' Loom recap", "done": false}, "10-12": {"task": "LinkedIn: Post recap + thank supporters", "done": false}, "13-15": {"task": "Plan Month 2: Certs or Job focus", "done": false}, "15-17": {"task": "Celebrate: You shipped 30 days", "done": false}, "17-18": {"task": "Rest", "done": false}}},
+        "2026-05-22": {"title": "Buffer Day", "completed": false, "slots": {"09-11": {"task": "Catch up any missed tasks", "done": false}, "11-13": {"task": "Update resume with Week 4 wins", "done": false}, "15-17": {"task": "Apply to 3 more jobs", "done": false}, "17-18": {"task": "Plan next 30 days", "done": false}}}
+      }
+    },
+    {
+      "week": 5,
+      "title": "Week 5 - Final Days",
+      "days": {
+        "2026-05-23": {"title": "Networking Day", "completed": false, "slots": {"06-08": {"task": "LinkedIn: Message 5 SOC analysts", "done": false}, "08-10": {"task": "Join 2 cyber Discord/Slack groups", "done": false}, "10-12": {"task": "Comment meaningfully on 5 posts", "done": false}, "13-15": {"task": "Ask for 1 informational interview", "done": false}, "15-17": {"task": "Update portfolio with testimonials", "done": false}, "17-18": {"task": "Plan Day 29", "done": false}}},
+        "2026-05-24": {"title": "Final Review", "completed": false, "slots": {"06-08": {"task": "Review all 30 days of notes", "done": false}, "08-10": {"task": "Create 'Skills Learned' summary doc", "done": false}, "10-12": {"task": "Record final demo video of lab", "done": false}, "13-15": {"task": "Update all profiles with final links", "done": false}, "15-17": {"task": "Set job alert filters on job boards", "done": false}, "17-18": {"task": "Final rest", "done": false}}},
+        "2026-05-25": {"title": "Day 30 Celebration", "completed": false, "slots": {"09-11": {"task": "Write LinkedIn post: 'I finished 30 days'", "done": false}, "11-13": {"task": "Thank everyone who helped", "done": false}, "15-17": {"task": "Plan Month 2 roadmap", "done": false}, "17-18": {"task": "You did it. Rest.", "done": false}}}
       }
     }
   ]
