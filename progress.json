@@ -1,39 +1,183 @@
 {
-  "start_date": "2026-04-25",
-  "daily_hours": "06:00-18:00 IST",
   "weeks": [
     {
       "week": 1,
-      "theme": "Foundation + Tools",
+      "title": "Week 1 - Setup + CCNA Basics",
       "days": {
-       "2026-04-25": {
-  "title": "Day 1: Setup",
-  "completed": false,
-  "slots": {
-    "06-08": {"task": "Install Git + GitHub. Watch NetworkChuck Git video", "done": true},
-    "08-10": {"task": "Install VirtualBox + Kali Linux ISO. Boot VM", "done": true},
-    "10-12": {"task": "CCNA Revise: OSI, TCP/IP, Subnetting. 1-page notes", "done": false},
-    "13-15": {"task": "Linux: pwd,ls,cd,mkdir,rm,cp,mv in Kali", "done": false},
-    "15-17": {"task": "Create repo network-notes. Push CCNA notes", "done": false},
-    "17-18": {"task": "Plan Day 2. Change LinkedIn headline", "done": false}
-  }
-},
+        "2026-04-25": {
+          "title": "Day 1: Setup",
+          "completed": false,
+          "slots": {
+            "06-08": {"task": "Install Git + GitHub. Watch NetworkChuck Git video", "done": true},
+            "08-10": {"task": "Install VirtualBox + Kali Linux ISO. Boot VM", "done": true},
+            "10-12": {"task": "CCNA Revise: OSI, TCP/IP, Subnetting. 1-page notes", "done": false},
+            "13-15": {"task": "Linux: pwd,ls,cd,mkdir,rm,cp,mv in Kali", "done": false},
+            "15-17": {"task": "Create repo network-notes. Push CCNA notes", "done": false},
+            "17-18": {"task": "Plan Day 2. Change LinkedIn headline", "done": false}
+          }
+        },
         "2026-04-26": {
-  "title": "Day 2: Rest + Research",
-  "completed": false,
-  "slots": {
-    "06-08": {"task": "Rest / Sleep in. No screens first 30 min", "done": false},
-    "08-10": {"task": "YouTube: 'A Day in Life of SOC Analyst' - take 3 notes", "done": false},
-    "10-12": {"task": "Research 3 entry cyber roles: SOC L1, IT Support, NOC", "done": false},
-    "13-15": {"task": "Write 5 lines: Why cybersecurity for SOP/LinkedIn", "done": false},
-    "15-17": {"task": "Revise Linux: pwd, ls, cd, mkdir, rm, cp, mv - do in Kali", "done": false},
-    "17-18": {"task": "Week 1 review: List wins + blockers. Plan Day 3", "done": false}
-  }
-},
-        "2026-04-27": {"title": "Day 3: Network + Tools", "slots": {"06-08": "IPv4 vs IPv6, NAT, DHCP", "08-10": "Wireshark: capture wifi, find DNS/HTTP", "10-12": "Nmap: scan localhost", "13-15": "Naukri new profile", "15-17": "Resume draft in Docs", "17-18": "Apply 2 IT Support jobs"}},
-        "2026-04-28": {"title": "Day 4: Linux + CCNA", "slots": {"06-08": "Linux: users,sudo,chmod,chown", "08-10": "CCNA: VLAN,ACL,RIP,OSPF", "10-12": "Nmap: scan router -sV", "13-15": "Git: nmap-scans repo push", "15-17": "LinkedIn About section", "17-18": "Apply 3 Network Engineer"}},
-        "2026-04-29": {"title": "Day 5: Resume + Project 1", "slots": {"06-08": "Resume v1 complete", "08-10": "Firewall: Palo Alto/Fortinet basics", "10-12": "Project 1: Nmap home network map", "13-15": "Document IP,MAC,Ports in PDF", "15-17": "Push Project 1 + README", "17-18": "Apply 3 SOC Intern"}},
-        "2026-04-30": {"title": "Day 6: Python + Apply", "slots": {"06-08": "Python: print,variables,loops on replit", "08-10": "CCNA: VPN,IPSec,SSL/TLS", "10-12": "Project 1: Add risks section", "13-15": "LinkedIn: Connect 10 SOC people", "15-17": "Cover letter template", "17-18": "Apply 5 jobs + Excel track"}}
+          "title": "Day 2: Rest + Research",
+          "completed": false,
+          "slots": {
+            "06-08": {"task": "Rest / Sleep in. No screens first 30 min", "done": false},
+            "08-10": {"task": "YouTube: 'A Day in Life of SOC Analyst' - take 3 notes", "done": false},
+            "10-12": {"task": "Research 3 entry cyber roles: SOC L1, IT Support, NOC", "done": false},
+            "13-15": {"task": "Write 5 lines: Why cybersecurity for SOP/LinkedIn", "done": false},
+            "15-17": {"task": "Revise Linux: pwd, ls, cd, mkdir, rm, cp, mv - do in Kali", "done": false},
+            "17-18": {"task": "Week 1 review: List wins + blockers. Plan Day 3", "done": false}
+          }
+        },
+        "2026-04-27": {
+          "title": "Day 3: Linux + VLANs",
+          "completed": false,
+          "slots": {
+            "06-08": {"task": "Linux: chmod, chown, grep, find, pipes |, >", "done": false},
+            "08-10": {"task": "CCNA: VLANs, Trunking, Inter-VLAN routing", "done": false},
+            "10-12": {"task": "Packet Tracer: Create 2 VLANs + router", "done": false},
+            "13-15": {"task": "Git: branch, merge, pull request practice", "done": false},
+            "15-17": {"task": "Update LinkedIn About section draft", "done": false},
+            "17-18": {"task": "Plan Day 4", "done": false}
+          }
+        },
+        "2026-04-28": {
+          "title": "Day 4: Users + ACLs",
+          "completed": false,
+          "slots": {
+            "06-08": {"task": "Linux: useradd, passwd, sudo, groups", "done": false},
+            "08-10": {"task": "CCNA: ACLs standard + extended", "done": false},
+            "10-12": {"task": "Nmap: scan Kali VM from host", "done": false},
+            "13-15": {"task": "Git: Clone repo, make changes, push", "done": false},
+            "15-17": {"task": "LinkedIn: Post 'Day 4 learning VLANs'", "done": false},
+            "17-18": {"task": "Plan Day 5", "done": false}
+          }
+        },
+        "2026-04-29": {
+          "title": "Day 5: Wireshark + STP",
+          "completed": false,
+          "slots": {
+            "06-08": {"task": "Wireshark: Capture ping, filter ICMP", "done": false},
+            "08-10": {"task": "CCNA: STP, EtherChannel basics", "done": false},
+            "10-12": {"task": "Nmap: -sV -O scan, save output", "done": false},
+            "13-15": {"task": "Resume: Add Linux + Networking section", "done": false},
+            "15-17": {"task": "Naukri: Update profile keywords", "done": false},
+            "17-18": {"task": "Plan Day 6", "done": false}
+          }
+        },
+        "2026-04-30": {
+          "title": "Day 6: Review + Push",
+          "completed": false,
+          "slots": {
+            "06-08": {"task": "Review all Week 1 notes", "done": false},
+            "08-10": {"task": "Git: Push all notes to GitHub with README", "done": false},
+            "10-12": {"task": "LinkedIn: Banner + headline update", "done": false},
+            "13-15": {"task": "Mock: Explain OSI to friend/record", "done": false},
+            "15-17": {"task": "Week 1 retro: What worked/what didn't", "done": false},
+            "17-18": {"task": "Plan Week 2", "done": false}
+          }
+        }
+      }
+    },
+    {
+      "week": 2,
+      "title": "Week 2 - Firewall + SIEM Intro",
+      "days": {
+        "2026-05-01": {
+          "title": "Day 7: pfSense Install",
+          "completed": false,
+          "slots": {
+            "06-08": {"task": "Download pfSense ISO. Create VM 2GB RAM", "done": false},
+            "08-10": {"task": "Install pfSense. Set WAN + LAN", "done": false},
+            "10-12": {"task": "Access pfSense webGUI from Kali", "done": false},
+            "13-15": {"task": "CCNA: NAT, PAT concepts", "done": false},
+            "15-17": {"task": "Document pfSense setup in GitHub", "done": false},
+            "17-18": {"task": "Plan Day 8", "done": false}
+          }
+        },
+        "2026-05-02": {
+          "title": "Day 8: Firewall Rules",
+          "completed": false,
+          "slots": {
+            "06-08": {"task": "pfSense: Block ICMP from WAN", "done": false},
+            "08-10": {"task": "pfSense: Allow HTTP/HTTPS LAN to WAN", "done": false},
+            "10-12": {"task": "Test rules with ping + curl", "done": false},
+            "13-15": {"task": "CCNA: DHCP, DNS deep dive", "done": false},
+            "15-17": {"task": "Screenshot rules + push to GitHub", "done": false},
+            "17-18": {"task": "Plan Day 9", "done": false}
+          }
+        },
+        "2026-05-03": {
+          "title": "Day 9: Splunk Install",
+          "completed": false,
+          "slots": {
+            "06-08": {"task": "Install Splunk Free on Kali/Ubuntu VM", "done": false},
+            "08-10": {"task": "Ingest /var/log/auth.log into Splunk", "done": false},
+            "10-12": {"task": "Splunk: Search 'failed password'", "done": false},
+            "13-15": {"task": "CCNA: OSPF single area basics", "done": false},
+            "15-17": {"task": "Create Splunk dashboard screenshot", "done": false},
+            "17-18": {"task": "Plan Day 10", "done": false}
+          }
+        },
+        "2026-05-04": {
+          "title": "Day 10: SIEM Queries",
+          "completed": false,
+          "slots": {
+            "06-08": {"task": "Splunk: Stats count by src_ip", "done": false},
+            "08-10": {"task": "Splunk: Create alert for 5 failed logins", "done": false},
+            "10-12": {"task": "pfSense: Send logs to Splunk via syslog", "done": false},
+            "13-15": {"task": "CCNA: EIGRP basics vs OSPF", "done": false},
+            "15-17": {"task": "LinkedIn: Post 'Learning SIEM'", "done": false},
+            "17-18": {"task": "Plan Day 11", "done": false}
+          }
+        },
+        "2026-05-05": {
+          "title": "Day 11: MITRE + Logs",
+          "completed": false,
+          "slots": {
+            "06-08": {"task": "MITRE ATT&CK: Read T1078 Valid Accounts", "done": false},
+            "08-10": {"task": "Map failed login to MITRE technique", "done": false},
+            "10-12": {"task": "Wireshark: Find SYN scan pattern", "done": false},
+            "13-15": {"task": "Resume: Add pfSense + Splunk projects", "done": false},
+            "15-17": {"task": "GitHub: Create security-lab repo", "done": false},
+            "17-18": {"task": "Plan Day 12", "done": false}
+          }
+        },
+        "2026-05-06": {
+          "title": "Day 12: Week 2 Review",
+          "completed": false,
+          "slots": {
+            "06-08": {"task": "Review pfSense + Splunk notes", "done": false},
+            "08-10": {"task": "Record 2min Loom: 'My SOC lab'", "done": false},
+            "10-12": {"task": "LinkedIn: Post Loom video", "done": false},
+            "13-15": {"task": "Apply to 3 SOC L1 jobs on Naukri", "done": false},
+            "15-17": {"task": "Week 2 retro + Week 3 plan", "done": false},
+            "17-18": {"task": "Rest", "done": false}
+          }
+        }
+      }
+    },
+    {
+      "week": 3,
+      "title": "Week 3 - IR + Cloud Basics",
+      "days": {
+        "2026-05-07": {"title": "Day 13: IR Process", "completed": false, "slots": {"06-08": {"task": "NIST IR: Preparation phase study", "done": false}, "08-10": {"task": "Create IR contact list template", "done": false}, "10-12": {"task": "CCNA: BGP basics", "done": false}, "13-15": {"task": "AWS: Create free tier account", "done": false}, "15-17": {"task": "Document IR process in GitHub", "done": false}, "17-18": {"task": "Plan Day 14", "done": false}}},
+        "2026-05-08": {"title": "Day 14: Detection + Analysis", "completed": false, "slots": {"06-08": {"task": "NIST IR: Detection & Analysis", "done": false}, "08-10": {"task": "Simulate brute force on Kali SSH", "done": false}, "10-12": {"task": "Splunk: Detect brute force alert", "done": false}, "13-15": {"task": "AWS: Launch EC2 t2.micro", "done": false}, "15-17": {"task": "Write IR report template", "done": false}, "17-18": {"task": "Plan Day 15", "done": false}}},
+        "2026-05-09": {"title": "Day 15: Containment", "completed": false, "slots": {"06-08": {"task": "NIST IR: Containment, Eradication", "done": false}, "08-10": {"task": "iptables: Block attacking IP", "done": false}, "10-12": {"task": "pfSense: Create block alias", "done": false}, "13-15": {"task": "AWS: Security Groups basics", "done": false}, "15-17": {"task": "Update GitHub with IR playbook", "done": false}, "17-18": {"task": "Plan Day 16", "done": false}}},
+        "2026-05-10": {"title": "Day 16: Recovery + Azure", "completed": false, "slots": {"06-08": {"task": "NIST IR: Recovery + Lessons Learned", "done": false}, "08-10": {"task": "Azure: Create free account", "done": false}, "10-12": {"task": "Azure: Create Resource Group + VM", "done": false}, "13-15": {"task": "CCNA: IPv6 basics", "done": false}, "15-17": {"task": "LinkedIn: 'Learning Cloud Security'", "done": false}, "17-18": {"task": "Plan Day 17", "done": false}}},
+        "2026-05-11": {"title": "Day 17: Cloud Logging", "completed": false, "slots": {"06-08": {"task": "AWS: Enable CloudTrail", "done": false}, "08-10": {"task": "Azure: Enable Activity Log", "done": false}, "10-12": {"task": "Splunk: Research AWS/Azure add-on", "done": false}, "13-15": {"task": "Resume: Add Cloud section", "done": false}, "15-17": {"task": "Apply to 3 Cloud SOC jobs", "done": false}, "17-18": {"task": "Plan Day 18", "done": false}}},
+        "2026-05-12": {"title": "Day 18: Week 3 Review", "completed": false, "slots": {"06-08": {"task": "Review IR + Cloud notes", "done": false}, "08-10": {"task": "Record Loom: 'IR Process explained'", "done": false}, "10-12": {"task": "GitHub: Push all Week 3 docs", "done": false}, "13-15": {"task": "LinkedIn: Post Loom + tag #cybersecurity", "done": false}, "15-17": {"task": "Week 3 retro + Week 4 plan", "done": false}, "17-18": {"task": "Rest", "done": false}}}
+      }
+    },
+    {
+      "week": 4,
+      "title": "Week 4 - Interview + Portfolio",
+      "days": {
+        "2026-05-13": {"title": "Day 19: Interview Prep 1", "completed": false, "slots": {"06-08": {"task": "Top 20 SOC L1 interview Qs", "done": false}, "08-10": {"task": "STAR method: Write 3 stories", "done": false}, "10-12": {"task": "Mock: Record 'Tell me about yourself'", "done": false}, "13-15": {"task": "CCNA: Final revision flashcards", "done": false}, "15-17": {"task": "GitHub: Polish README for all repos", "done": false}, "17-18": {"task": "Plan Day 20", "done": false}}},
+        "2026-05-14": {"title": "Day 20: Interview Prep 2", "completed": false, "slots": {"06-08": {"task": "Scenario: How to handle phishing alert", "done": false}, "08-10": {"task": "Scenario: Brute force investigation steps", "done": false}, "10-12": {"task": "Mock: Friend asks TCP vs UDP", "done": false}, "13-15": {"task": "Resume: Final version PDF", "done": false}, "15-17": {"task": "LinkedIn: Turn on 'Open to Work'", "done": false}, "17-18": {"task": "Plan Day 21", "done": false}}},
+        "2026-05-15": {"title": "Day 21: Portfolio Site", "completed": false, "slots": {"06-08": {"task": "GitHub Pages: Create portfolio site", "done": false}, "08-10": {"task": "Add: Projects, Skills, Contact", "done": false}, "10-12": {"task": "Add: Loom video embeds", "done": false}, "13-15": {"task": "Buy domain OR use github.io link", "done": false}, "15-17": {"task": "Share portfolio on LinkedIn", "done": false}, "17-18": {"task": "Plan Day 22", "done": false}}},
+        "2026-05-16": {"title": "Day 22: Apply Sprint", "completed": false, "slots": {"06-08": {"task": "Apply: 5 jobs Naukri", "done": false}, "08-10": {"task": "Apply: 5 jobs LinkedIn", "done": false}, "10-12": {"task": "Message 3 recruiters on LinkedIn", "done": false}, "13-15": {"task": "Tailor resume for 1 job", "done": false}, "15-17": {"task": "Track applications in spreadsheet", "done": false}, "17-18": {"task": "Plan Day 23", "done": false}}},
+        "2026-05-17": {"title": "Day 23: Mock Interview", "completed": false, "slots": {"06-08": {"task": "Full mock: 30min with friend/ChatGPT voice", "done": false}, "08-10": {"task": "Review recording + note gaps", "done": false}, "10-12": {"task": "Fix gaps: Study weak topics 2hr", "done": false}, "13-15": {"task": "Update LinkedIn posts with learnings", "done": false}, "15-17": {"task": "Send 5 connection requests", "done": false}, "17-18": {"task": "Plan Day 24", "done": false}}},
+        "2026-05-18": {"title": "Day 24: 30-Day Ship", "completed": false, "slots": {"06-08": {"task": "Final GitHub push: All notes clean", "done": false}, "08-10": {"task": "Record '30 Day Journey' Loom recap", "done": false}, "10-12": {"task": "LinkedIn: Post recap + thank supporters", "done": false}, "13-15": {"task": "Plan Month 2: Certs or Job focus", "done": false}, "15-17": {"task": "Celebrate: You shipped 30 days", "done": false}, "17-18": {"task": "Rest", "done": false}}}
       }
     }
   ]
