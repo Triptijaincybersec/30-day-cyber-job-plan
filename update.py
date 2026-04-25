@@ -1,4 +1,32 @@
 import json
+from datetime import datetime
+
+def format_time_slot(time_str):
+    """Convert 06-08 to 6:00 AM - 8:00 AM"""
+    try:
+        start, end = time_str.split('-')
+        start_hr = int(start)
+        end_hr = int(end)
+        
+        start_period = 'AM' if start_hr < 12 else 'PM'
+        end_period = 'AM' if end_hr < 12 else 'PM'
+        
+        start_12 = start_hr if start_hr <= 12 else start_hr - 12
+        end_12 = end_hr if end_hr <= 12 else end_hr - 12
+        if start_12 == 0: start_12 = 12
+        if end_12 == 0: end_12 = 12
+        
+        return f"{start_12}:00 {start_period} - {end_12}:00 {end_period}"
+    except:
+        return time_str
+
+def get_day_name(date_str):
+    """Get Monday, Tuesday, etc from 2026-04-25"""
+    try:
+        date_obj = datetime.strptime(date_str, '%Y-%m-%d')
+        return date_obj.strftime('%A')
+    except:
+        return ''
 
 def build_site():
     with open('progress.json', 'r', encoding='utf-8') as f:
@@ -21,6 +49,10 @@ def build_site():
             all_slots_done = True
             day_completed_slots = 0
             day_total_slots = 0
+            
+            day_name = get_day_name(date)
+            is_sunday = day_name == 'Sunday'
+            rest_tag = '<span class="rest-tag">Rest Day</span>' if is_sunday else ''
 
             for time, slot in day_data['slots'].items():
                 if isinstance(slot, dict):
@@ -37,12 +69,14 @@ def build_site():
                     day_completed_slots += 1
                 if not done: all_slots_done = False
                 checked = 'checked' if done else ''
+                
+                time_formatted = format_time_slot(time)
 
                 slots_html += f'''
                 <label class="slot">
                   <input type="checkbox" {checked} disabled>
                   <span class="checkmark"></span>
-                  <span class="time">{time}</span> {task}
+                  <span class="time">{time_formatted}</span> {task}
                 </label>
                 '''
 
@@ -52,12 +86,14 @@ def build_site():
             
             day_percent = int((day_completed_slots / day_total_slots) * 100) if day_total_slots else 0
             day_class = 'completed' if all_slots_done else ''
+            day_class += ' sunday' if is_sunday else ''
             
             days_html += f'''
             <details class="day-folder {day_class}">
               <summary>
                 <span class="folder-icon">📁</span>
-                {day_data['title']}
+                {day_data['title']} : {day_name}
+                {rest_tag}
                 <span class="day-progress">{day_completed_slots}/{day_total_slots} = {day_percent}%</span>
               </summary>
               <div class="slots">{slots_html}</div>
@@ -150,6 +186,10 @@ def build_site():
             border-radius: 8px;
             background: #0d1117;
         }}
+        .day-folder.sunday {{
+            border-color: #1f6feb;
+            background: #0c162d;
+        }}
         .day-folder summary {{
             padding: 14px 16px;
             font-size: 16px;
@@ -159,10 +199,20 @@ def build_site():
             align-items: center;
             gap: 8px;
             list-style: none;
+            flex-wrap: wrap;
         }}
         .day-folder summary::-webkit-details-marker {{ display: none; }}
         .day-folder summary:hover {{ background: #161b22; }}
         .day-folder.completed summary {{ color: #3fb950; }}
+        .rest-tag {{
+            background: #1f6feb;
+            color: #fff;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }}
         .day-progress {{
             margin-left: auto;
             font-size: 13px;
@@ -212,8 +262,8 @@ def build_site():
             color: #3fb950;
             font-weight: 600;
             margin-right: 10px;
-            min-width: 55px;
-            font-size: 14px;
+            min-width: 140px;
+            font-size: 13px;
         }}
         .slot input:checked ~ .time,
         .slot input:checked ~ span:last-child {{

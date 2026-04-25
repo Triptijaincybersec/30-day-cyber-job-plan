@@ -69,6 +69,10 @@
             border-radius: 8px;
             background: #0d1117;
         }
+        .day-folder.sunday {
+            border-color: #1f6feb;
+            background: #0c162d;
+        }
         .day-folder summary {
             padding: 14px 16px;
             font-size: 16px;
@@ -78,10 +82,20 @@
             align-items: center;
             gap: 8px;
             list-style: none;
+            flex-wrap: wrap;
         }
         .day-folder summary::-webkit-details-marker { display: none; }
         .day-folder summary:hover { background: #161b22; }
         .day-folder.completed summary { color: #3fb950; }
+        .rest-tag {
+            background: #1f6feb;
+            color: #fff;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
         .day-progress {
             margin-left: auto;
             font-size: 13px;
@@ -131,8 +145,8 @@
             color: #3fb950;
             font-weight: 600;
             margin-right: 10px;
-            min-width: 55px;
-            font-size: 14px;
+            min-width: 140px;
+            font-size: 13px;
         }
         .slot input:checked ~ .time,
         .slot input:checked ~ span:last-child {
@@ -157,44 +171,91 @@
             <details class="day-folder ">
               <summary>
                 <span class="folder-icon">📁</span>
-                Day 1: Setup
+                Day 1: Setup : Saturday
+                
                 <span class="day-progress">2/6 = 33%</span>
               </summary>
               <div class="slots">
                 <label class="slot">
                   <input type="checkbox" checked disabled>
                   <span class="checkmark"></span>
-                  <span class="time">06-08</span> Install Git + GitHub. Watch NetworkChuck Git video
+                  <span class="time">6:00 AM - 8:00 AM</span> Install Git + GitHub. Watch NetworkChuck Git video
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox" checked disabled>
                   <span class="checkmark"></span>
-                  <span class="time">08-10</span> Install VirtualBox + Kali Linux ISO. Boot VM
+                  <span class="time">8:00 AM - 10:00 AM</span> Install VirtualBox + Kali Linux ISO. Boot VM
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">10-12</span> CCNA Revise: OSI, TCP/IP, Subnetting. 1-page notes
+                  <span class="time">10:00 AM - 12:00 PM</span> CCNA Revise: OSI, TCP/IP, Subnetting. 1-page notes
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">13-15</span> Linux: pwd,ls,cd,mkdir,rm,cp,mv in Kali
+                  <span class="time">1:00 PM - 3:00 PM</span> Linux: pwd,ls,cd,mkdir,rm,cp,mv in Kali
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">15-17</span> Create repo network-notes. Push CCNA notes
+                  <span class="time">3:00 PM - 5:00 PM</span> Create repo network-notes. Push CCNA notes
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">17-18</span> Plan Day 2. Change LinkedIn headline
+                  <span class="time">5:00 PM - 6:00 PM</span> Plan Day 2. Change LinkedIn headline
+                </label>
+                </div>
+            </details>
+            
+            <details class="day-folder  sunday">
+              <summary>
+                <span class="folder-icon">📁</span>
+                Day 2: Rest + Research : Sunday
+                <span class="rest-tag">Rest Day</span>
+                <span class="day-progress">0/6 = 0%</span>
+              </summary>
+              <div class="slots">
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">6:00 AM - 8:00 AM</span> Rest / Sleep in. No screens first 30 min
+                </label>
+                
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">8:00 AM - 10:00 AM</span> YouTube: 'A Day in Life of SOC Analyst' - take 3 notes
+                </label>
+                
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">10:00 AM - 12:00 PM</span> Research 3 entry cyber roles: SOC L1, IT Support, NOC
+                </label>
+                
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">1:00 PM - 3:00 PM</span> Write 5 lines: Why cybersecurity for SOP/LinkedIn
+                </label>
+                
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">3:00 PM - 5:00 PM</span> Revise Linux: pwd, ls, cd, mkdir, rm, cp, mv - do in Kali
+                </label>
+                
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">5:00 PM - 6:00 PM</span> Week 1 review: List wins + blockers. Plan Day 3
                 </label>
                 </div>
             </details>
@@ -202,44 +263,45 @@
             <details class="day-folder ">
               <summary>
                 <span class="folder-icon">📁</span>
-                Day 2: Rest + Research
+                Day 3: Linux + VLANs : Monday
+                
                 <span class="day-progress">0/6 = 0%</span>
               </summary>
               <div class="slots">
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">06-08</span> Rest / Sleep in. No screens first 30 min
+                  <span class="time">6:00 AM - 8:00 AM</span> Linux: chmod, chown, grep, find, pipes |, >
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">08-10</span> YouTube: 'A Day in Life of SOC Analyst' - take 3 notes
+                  <span class="time">8:00 AM - 10:00 AM</span> CCNA: VLANs, Trunking, Inter-VLAN routing
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">10-12</span> Research 3 entry cyber roles: SOC L1, IT Support, NOC
+                  <span class="time">10:00 AM - 12:00 PM</span> Packet Tracer: Create 2 VLANs + router
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">13-15</span> Write 5 lines: Why cybersecurity for SOP/LinkedIn
+                  <span class="time">1:00 PM - 3:00 PM</span> Git: branch, merge, pull request practice
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">15-17</span> Revise Linux: pwd, ls, cd, mkdir, rm, cp, mv - do in Kali
+                  <span class="time">3:00 PM - 5:00 PM</span> Update LinkedIn About section draft
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">17-18</span> Week 1 review: List wins + blockers. Plan Day 3
+                  <span class="time">5:00 PM - 6:00 PM</span> Plan Day 4
                 </label>
                 </div>
             </details>
@@ -247,44 +309,45 @@
             <details class="day-folder ">
               <summary>
                 <span class="folder-icon">📁</span>
-                Day 3: Linux + VLANs
+                Day 4: Users + ACLs : Tuesday
+                
                 <span class="day-progress">0/6 = 0%</span>
               </summary>
               <div class="slots">
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">06-08</span> Linux: chmod, chown, grep, find, pipes |, >
+                  <span class="time">6:00 AM - 8:00 AM</span> Linux: useradd, passwd, sudo, groups
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">08-10</span> CCNA: VLANs, Trunking, Inter-VLAN routing
+                  <span class="time">8:00 AM - 10:00 AM</span> CCNA: ACLs standard + extended
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">10-12</span> Packet Tracer: Create 2 VLANs + router
+                  <span class="time">10:00 AM - 12:00 PM</span> Nmap: scan Kali VM from host
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">13-15</span> Git: branch, merge, pull request practice
+                  <span class="time">1:00 PM - 3:00 PM</span> Git: Clone repo, make changes, push
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">15-17</span> Update LinkedIn About section draft
+                  <span class="time">3:00 PM - 5:00 PM</span> LinkedIn: Post 'Day 4 learning VLANs'
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">17-18</span> Plan Day 4
+                  <span class="time">5:00 PM - 6:00 PM</span> Plan Day 5
                 </label>
                 </div>
             </details>
@@ -292,44 +355,45 @@
             <details class="day-folder ">
               <summary>
                 <span class="folder-icon">📁</span>
-                Day 4: Users + ACLs
+                Day 5: Wireshark + STP : Wednesday
+                
                 <span class="day-progress">0/6 = 0%</span>
               </summary>
               <div class="slots">
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">06-08</span> Linux: useradd, passwd, sudo, groups
+                  <span class="time">6:00 AM - 8:00 AM</span> Wireshark: Capture ping, filter ICMP
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">08-10</span> CCNA: ACLs standard + extended
+                  <span class="time">8:00 AM - 10:00 AM</span> CCNA: STP, EtherChannel basics
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">10-12</span> Nmap: scan Kali VM from host
+                  <span class="time">10:00 AM - 12:00 PM</span> Nmap: -sV -O scan, save output
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">13-15</span> Git: Clone repo, make changes, push
+                  <span class="time">1:00 PM - 3:00 PM</span> Resume: Add Linux + Networking section
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">15-17</span> LinkedIn: Post 'Day 4 learning VLANs'
+                  <span class="time">3:00 PM - 5:00 PM</span> Naukri: Update profile keywords
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">17-18</span> Plan Day 5
+                  <span class="time">5:00 PM - 6:00 PM</span> Plan Day 6
                 </label>
                 </div>
             </details>
@@ -337,89 +401,45 @@
             <details class="day-folder ">
               <summary>
                 <span class="folder-icon">📁</span>
-                Day 5: Wireshark + STP
+                Day 6: Review + Push : Thursday
+                
                 <span class="day-progress">0/6 = 0%</span>
               </summary>
               <div class="slots">
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">06-08</span> Wireshark: Capture ping, filter ICMP
+                  <span class="time">6:00 AM - 8:00 AM</span> Review all Week 1 notes
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">08-10</span> CCNA: STP, EtherChannel basics
+                  <span class="time">8:00 AM - 10:00 AM</span> Git: Push all notes to GitHub with README
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">10-12</span> Nmap: -sV -O scan, save output
+                  <span class="time">10:00 AM - 12:00 PM</span> LinkedIn: Banner + headline update
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">13-15</span> Resume: Add Linux + Networking section
+                  <span class="time">1:00 PM - 3:00 PM</span> Mock: Explain OSI to friend/record
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">15-17</span> Naukri: Update profile keywords
+                  <span class="time">3:00 PM - 5:00 PM</span> Week 1 retro: What worked/what didn't
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">17-18</span> Plan Day 6
-                </label>
-                </div>
-            </details>
-            
-            <details class="day-folder ">
-              <summary>
-                <span class="folder-icon">📁</span>
-                Day 6: Review + Push
-                <span class="day-progress">0/6 = 0%</span>
-              </summary>
-              <div class="slots">
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">06-08</span> Review all Week 1 notes
-                </label>
-                
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">08-10</span> Git: Push all notes to GitHub with README
-                </label>
-                
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">10-12</span> LinkedIn: Banner + headline update
-                </label>
-                
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">13-15</span> Mock: Explain OSI to friend/record
-                </label>
-                
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">15-17</span> Week 1 retro: What worked/what didn't
-                </label>
-                
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">17-18</span> Plan Week 2
+                  <span class="time">5:00 PM - 6:00 PM</span> Plan Week 2
                 </label>
                 </div>
             </details>
@@ -436,44 +456,45 @@
             <details class="day-folder ">
               <summary>
                 <span class="folder-icon">📁</span>
-                Day 7: pfSense Install
+                Day 7: pfSense Install : Friday
+                
                 <span class="day-progress">0/6 = 0%</span>
               </summary>
               <div class="slots">
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">06-08</span> Download pfSense ISO. Create VM 2GB RAM
+                  <span class="time">6:00 AM - 8:00 AM</span> Download pfSense ISO. Create VM 2GB RAM
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">08-10</span> Install pfSense. Set WAN + LAN
+                  <span class="time">8:00 AM - 10:00 AM</span> Install pfSense. Set WAN + LAN
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">10-12</span> Access pfSense webGUI from Kali
+                  <span class="time">10:00 AM - 12:00 PM</span> Access pfSense webGUI from Kali
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">13-15</span> CCNA: NAT, PAT concepts
+                  <span class="time">1:00 PM - 3:00 PM</span> CCNA: NAT, PAT concepts
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">15-17</span> Document pfSense setup in GitHub
+                  <span class="time">3:00 PM - 5:00 PM</span> Document pfSense setup in GitHub
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">17-18</span> Plan Day 8
+                  <span class="time">5:00 PM - 6:00 PM</span> Plan Day 8
                 </label>
                 </div>
             </details>
@@ -481,44 +502,91 @@
             <details class="day-folder ">
               <summary>
                 <span class="folder-icon">📁</span>
-                Day 8: Firewall Rules
+                Day 8: Firewall Rules : Saturday
+                
                 <span class="day-progress">0/6 = 0%</span>
               </summary>
               <div class="slots">
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">06-08</span> pfSense: Block ICMP from WAN
+                  <span class="time">6:00 AM - 8:00 AM</span> pfSense: Block ICMP from WAN
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">08-10</span> pfSense: Allow HTTP/HTTPS LAN to WAN
+                  <span class="time">8:00 AM - 10:00 AM</span> pfSense: Allow HTTP/HTTPS LAN to WAN
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">10-12</span> Test rules with ping + curl
+                  <span class="time">10:00 AM - 12:00 PM</span> Test rules with ping + curl
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">13-15</span> CCNA: DHCP, DNS deep dive
+                  <span class="time">1:00 PM - 3:00 PM</span> CCNA: DHCP, DNS deep dive
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">15-17</span> Screenshot rules + push to GitHub
+                  <span class="time">3:00 PM - 5:00 PM</span> Screenshot rules + push to GitHub
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">17-18</span> Plan Day 9
+                  <span class="time">5:00 PM - 6:00 PM</span> Plan Day 9
+                </label>
+                </div>
+            </details>
+            
+            <details class="day-folder  sunday">
+              <summary>
+                <span class="folder-icon">📁</span>
+                Day 9: Splunk Install : Sunday
+                <span class="rest-tag">Rest Day</span>
+                <span class="day-progress">0/6 = 0%</span>
+              </summary>
+              <div class="slots">
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">6:00 AM - 8:00 AM</span> Install Splunk Free on Kali/Ubuntu VM
+                </label>
+                
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">8:00 AM - 10:00 AM</span> Ingest /var/log/auth.log into Splunk
+                </label>
+                
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">10:00 AM - 12:00 PM</span> Splunk: Search 'failed password'
+                </label>
+                
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">1:00 PM - 3:00 PM</span> CCNA: OSPF single area basics
+                </label>
+                
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">3:00 PM - 5:00 PM</span> Create Splunk dashboard screenshot
+                </label>
+                
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">5:00 PM - 6:00 PM</span> Plan Day 10
                 </label>
                 </div>
             </details>
@@ -526,44 +594,45 @@
             <details class="day-folder ">
               <summary>
                 <span class="folder-icon">📁</span>
-                Day 9: Splunk Install
+                Day 10: SIEM Queries : Monday
+                
                 <span class="day-progress">0/6 = 0%</span>
               </summary>
               <div class="slots">
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">06-08</span> Install Splunk Free on Kali/Ubuntu VM
+                  <span class="time">6:00 AM - 8:00 AM</span> Splunk: Stats count by src_ip
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">08-10</span> Ingest /var/log/auth.log into Splunk
+                  <span class="time">8:00 AM - 10:00 AM</span> Splunk: Create alert for 5 failed logins
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">10-12</span> Splunk: Search 'failed password'
+                  <span class="time">10:00 AM - 12:00 PM</span> pfSense: Send logs to Splunk via syslog
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">13-15</span> CCNA: OSPF single area basics
+                  <span class="time">1:00 PM - 3:00 PM</span> CCNA: EIGRP basics vs OSPF
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">15-17</span> Create Splunk dashboard screenshot
+                  <span class="time">3:00 PM - 5:00 PM</span> LinkedIn: Post 'Learning SIEM'
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">17-18</span> Plan Day 10
+                  <span class="time">5:00 PM - 6:00 PM</span> Plan Day 11
                 </label>
                 </div>
             </details>
@@ -571,44 +640,45 @@
             <details class="day-folder ">
               <summary>
                 <span class="folder-icon">📁</span>
-                Day 10: SIEM Queries
+                Day 11: MITRE + Logs : Tuesday
+                
                 <span class="day-progress">0/6 = 0%</span>
               </summary>
               <div class="slots">
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">06-08</span> Splunk: Stats count by src_ip
+                  <span class="time">6:00 AM - 8:00 AM</span> MITRE ATT&CK: Read T1078 Valid Accounts
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">08-10</span> Splunk: Create alert for 5 failed logins
+                  <span class="time">8:00 AM - 10:00 AM</span> Map failed login to MITRE technique
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">10-12</span> pfSense: Send logs to Splunk via syslog
+                  <span class="time">10:00 AM - 12:00 PM</span> Wireshark: Find SYN scan pattern
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">13-15</span> CCNA: EIGRP basics vs OSPF
+                  <span class="time">1:00 PM - 3:00 PM</span> Resume: Add pfSense + Splunk projects
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">15-17</span> LinkedIn: Post 'Learning SIEM'
+                  <span class="time">3:00 PM - 5:00 PM</span> GitHub: Create security-lab repo
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">17-18</span> Plan Day 11
+                  <span class="time">5:00 PM - 6:00 PM</span> Plan Day 12
                 </label>
                 </div>
             </details>
@@ -616,89 +686,45 @@
             <details class="day-folder ">
               <summary>
                 <span class="folder-icon">📁</span>
-                Day 11: MITRE + Logs
+                Day 12: Week 2 Review : Wednesday
+                
                 <span class="day-progress">0/6 = 0%</span>
               </summary>
               <div class="slots">
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">06-08</span> MITRE ATT&CK: Read T1078 Valid Accounts
+                  <span class="time">6:00 AM - 8:00 AM</span> Review pfSense + Splunk notes
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">08-10</span> Map failed login to MITRE technique
+                  <span class="time">8:00 AM - 10:00 AM</span> Record 2min Loom: 'My SOC lab'
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">10-12</span> Wireshark: Find SYN scan pattern
+                  <span class="time">10:00 AM - 12:00 PM</span> LinkedIn: Post Loom video
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">13-15</span> Resume: Add pfSense + Splunk projects
+                  <span class="time">1:00 PM - 3:00 PM</span> Apply to 3 SOC L1 jobs on Naukri
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">15-17</span> GitHub: Create security-lab repo
+                  <span class="time">3:00 PM - 5:00 PM</span> Week 2 retro + Week 3 plan
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">17-18</span> Plan Day 12
-                </label>
-                </div>
-            </details>
-            
-            <details class="day-folder ">
-              <summary>
-                <span class="folder-icon">📁</span>
-                Day 12: Week 2 Review
-                <span class="day-progress">0/6 = 0%</span>
-              </summary>
-              <div class="slots">
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">06-08</span> Review pfSense + Splunk notes
-                </label>
-                
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">08-10</span> Record 2min Loom: 'My SOC lab'
-                </label>
-                
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">10-12</span> LinkedIn: Post Loom video
-                </label>
-                
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">13-15</span> Apply to 3 SOC L1 jobs on Naukri
-                </label>
-                
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">15-17</span> Week 2 retro + Week 3 plan
-                </label>
-                
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">17-18</span> Rest
+                  <span class="time">5:00 PM - 6:00 PM</span> Rest
                 </label>
                 </div>
             </details>
@@ -715,44 +741,45 @@
             <details class="day-folder ">
               <summary>
                 <span class="folder-icon">📁</span>
-                Day 13: IR Process
+                Day 13: IR Process : Thursday
+                
                 <span class="day-progress">0/6 = 0%</span>
               </summary>
               <div class="slots">
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">06-08</span> NIST IR: Preparation phase study
+                  <span class="time">6:00 AM - 8:00 AM</span> NIST IR: Preparation phase study
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">08-10</span> Create IR contact list template
+                  <span class="time">8:00 AM - 10:00 AM</span> Create IR contact list template
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">10-12</span> CCNA: BGP basics
+                  <span class="time">10:00 AM - 12:00 PM</span> CCNA: BGP basics
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">13-15</span> AWS: Create free tier account
+                  <span class="time">1:00 PM - 3:00 PM</span> AWS: Create free tier account
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">15-17</span> Document IR process in GitHub
+                  <span class="time">3:00 PM - 5:00 PM</span> Document IR process in GitHub
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">17-18</span> Plan Day 14
+                  <span class="time">5:00 PM - 6:00 PM</span> Plan Day 14
                 </label>
                 </div>
             </details>
@@ -760,44 +787,45 @@
             <details class="day-folder ">
               <summary>
                 <span class="folder-icon">📁</span>
-                Day 14: Detection + Analysis
+                Day 14: Detection + Analysis : Friday
+                
                 <span class="day-progress">0/6 = 0%</span>
               </summary>
               <div class="slots">
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">06-08</span> NIST IR: Detection & Analysis
+                  <span class="time">6:00 AM - 8:00 AM</span> NIST IR: Detection & Analysis
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">08-10</span> Simulate brute force on Kali SSH
+                  <span class="time">8:00 AM - 10:00 AM</span> Simulate brute force on Kali SSH
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">10-12</span> Splunk: Detect brute force alert
+                  <span class="time">10:00 AM - 12:00 PM</span> Splunk: Detect brute force alert
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">13-15</span> AWS: Launch EC2 t2.micro
+                  <span class="time">1:00 PM - 3:00 PM</span> AWS: Launch EC2 t2.micro
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">15-17</span> Write IR report template
+                  <span class="time">3:00 PM - 5:00 PM</span> Write IR report template
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">17-18</span> Plan Day 15
+                  <span class="time">5:00 PM - 6:00 PM</span> Plan Day 15
                 </label>
                 </div>
             </details>
@@ -805,44 +833,91 @@
             <details class="day-folder ">
               <summary>
                 <span class="folder-icon">📁</span>
-                Day 15: Containment
+                Day 15: Containment : Saturday
+                
                 <span class="day-progress">0/6 = 0%</span>
               </summary>
               <div class="slots">
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">06-08</span> NIST IR: Containment, Eradication
+                  <span class="time">6:00 AM - 8:00 AM</span> NIST IR: Containment, Eradication
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">08-10</span> iptables: Block attacking IP
+                  <span class="time">8:00 AM - 10:00 AM</span> iptables: Block attacking IP
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">10-12</span> pfSense: Create block alias
+                  <span class="time">10:00 AM - 12:00 PM</span> pfSense: Create block alias
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">13-15</span> AWS: Security Groups basics
+                  <span class="time">1:00 PM - 3:00 PM</span> AWS: Security Groups basics
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">15-17</span> Update GitHub with IR playbook
+                  <span class="time">3:00 PM - 5:00 PM</span> Update GitHub with IR playbook
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">17-18</span> Plan Day 16
+                  <span class="time">5:00 PM - 6:00 PM</span> Plan Day 16
+                </label>
+                </div>
+            </details>
+            
+            <details class="day-folder  sunday">
+              <summary>
+                <span class="folder-icon">📁</span>
+                Day 16: Recovery + Azure : Sunday
+                <span class="rest-tag">Rest Day</span>
+                <span class="day-progress">0/6 = 0%</span>
+              </summary>
+              <div class="slots">
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">6:00 AM - 8:00 AM</span> NIST IR: Recovery + Lessons Learned
+                </label>
+                
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">8:00 AM - 10:00 AM</span> Azure: Create free account
+                </label>
+                
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">10:00 AM - 12:00 PM</span> Azure: Create Resource Group + VM
+                </label>
+                
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">1:00 PM - 3:00 PM</span> CCNA: IPv6 basics
+                </label>
+                
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">3:00 PM - 5:00 PM</span> LinkedIn: 'Learning Cloud Security'
+                </label>
+                
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">5:00 PM - 6:00 PM</span> Plan Day 17
                 </label>
                 </div>
             </details>
@@ -850,44 +925,45 @@
             <details class="day-folder ">
               <summary>
                 <span class="folder-icon">📁</span>
-                Day 16: Recovery + Azure
+                Day 17: Cloud Logging : Monday
+                
                 <span class="day-progress">0/6 = 0%</span>
               </summary>
               <div class="slots">
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">06-08</span> NIST IR: Recovery + Lessons Learned
+                  <span class="time">6:00 AM - 8:00 AM</span> AWS: Enable CloudTrail
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">08-10</span> Azure: Create free account
+                  <span class="time">8:00 AM - 10:00 AM</span> Azure: Enable Activity Log
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">10-12</span> Azure: Create Resource Group + VM
+                  <span class="time">10:00 AM - 12:00 PM</span> Splunk: Research AWS/Azure add-on
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">13-15</span> CCNA: IPv6 basics
+                  <span class="time">1:00 PM - 3:00 PM</span> Resume: Add Cloud section
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">15-17</span> LinkedIn: 'Learning Cloud Security'
+                  <span class="time">3:00 PM - 5:00 PM</span> Apply to 3 Cloud SOC jobs
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">17-18</span> Plan Day 17
+                  <span class="time">5:00 PM - 6:00 PM</span> Plan Day 18
                 </label>
                 </div>
             </details>
@@ -895,89 +971,45 @@
             <details class="day-folder ">
               <summary>
                 <span class="folder-icon">📁</span>
-                Day 17: Cloud Logging
+                Day 18: Week 3 Review : Tuesday
+                
                 <span class="day-progress">0/6 = 0%</span>
               </summary>
               <div class="slots">
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">06-08</span> AWS: Enable CloudTrail
+                  <span class="time">6:00 AM - 8:00 AM</span> Review IR + Cloud notes
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">08-10</span> Azure: Enable Activity Log
+                  <span class="time">8:00 AM - 10:00 AM</span> Record Loom: 'IR Process explained'
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">10-12</span> Splunk: Research AWS/Azure add-on
+                  <span class="time">10:00 AM - 12:00 PM</span> GitHub: Push all Week 3 docs
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">13-15</span> Resume: Add Cloud section
+                  <span class="time">1:00 PM - 3:00 PM</span> LinkedIn: Post Loom + tag #cybersecurity
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">15-17</span> Apply to 3 Cloud SOC jobs
+                  <span class="time">3:00 PM - 5:00 PM</span> Week 3 retro + Week 4 plan
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">17-18</span> Plan Day 18
-                </label>
-                </div>
-            </details>
-            
-            <details class="day-folder ">
-              <summary>
-                <span class="folder-icon">📁</span>
-                Day 18: Week 3 Review
-                <span class="day-progress">0/6 = 0%</span>
-              </summary>
-              <div class="slots">
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">06-08</span> Review IR + Cloud notes
-                </label>
-                
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">08-10</span> Record Loom: 'IR Process explained'
-                </label>
-                
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">10-12</span> GitHub: Push all Week 3 docs
-                </label>
-                
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">13-15</span> LinkedIn: Post Loom + tag #cybersecurity
-                </label>
-                
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">15-17</span> Week 3 retro + Week 4 plan
-                </label>
-                
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">17-18</span> Rest
+                  <span class="time">5:00 PM - 6:00 PM</span> Rest
                 </label>
                 </div>
             </details>
@@ -994,44 +1026,45 @@
             <details class="day-folder ">
               <summary>
                 <span class="folder-icon">📁</span>
-                Day 19: Interview Prep 1
+                Day 19: Interview Prep 1 : Wednesday
+                
                 <span class="day-progress">0/6 = 0%</span>
               </summary>
               <div class="slots">
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">06-08</span> Top 20 SOC L1 interview Qs
+                  <span class="time">6:00 AM - 8:00 AM</span> Top 20 SOC L1 interview Qs
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">08-10</span> STAR method: Write 3 stories
+                  <span class="time">8:00 AM - 10:00 AM</span> STAR method: Write 3 stories
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">10-12</span> Mock: Record 'Tell me about yourself'
+                  <span class="time">10:00 AM - 12:00 PM</span> Mock: Record 'Tell me about yourself'
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">13-15</span> CCNA: Final revision flashcards
+                  <span class="time">1:00 PM - 3:00 PM</span> CCNA: Final revision flashcards
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">15-17</span> GitHub: Polish README for all repos
+                  <span class="time">3:00 PM - 5:00 PM</span> GitHub: Polish README for all repos
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">17-18</span> Plan Day 20
+                  <span class="time">5:00 PM - 6:00 PM</span> Plan Day 20
                 </label>
                 </div>
             </details>
@@ -1039,44 +1072,45 @@
             <details class="day-folder ">
               <summary>
                 <span class="folder-icon">📁</span>
-                Day 20: Interview Prep 2
+                Day 20: Interview Prep 2 : Thursday
+                
                 <span class="day-progress">0/6 = 0%</span>
               </summary>
               <div class="slots">
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">06-08</span> Scenario: How to handle phishing alert
+                  <span class="time">6:00 AM - 8:00 AM</span> Scenario: How to handle phishing alert
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">08-10</span> Scenario: Brute force investigation steps
+                  <span class="time">8:00 AM - 10:00 AM</span> Scenario: Brute force investigation steps
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">10-12</span> Mock: Friend asks TCP vs UDP
+                  <span class="time">10:00 AM - 12:00 PM</span> Mock: Friend asks TCP vs UDP
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">13-15</span> Resume: Final version PDF
+                  <span class="time">1:00 PM - 3:00 PM</span> Resume: Final version PDF
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">15-17</span> LinkedIn: Turn on 'Open to Work'
+                  <span class="time">3:00 PM - 5:00 PM</span> LinkedIn: Turn on 'Open to Work'
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">17-18</span> Plan Day 21
+                  <span class="time">5:00 PM - 6:00 PM</span> Plan Day 21
                 </label>
                 </div>
             </details>
@@ -1084,44 +1118,45 @@
             <details class="day-folder ">
               <summary>
                 <span class="folder-icon">📁</span>
-                Day 21: Portfolio Site
+                Day 21: Portfolio Site : Friday
+                
                 <span class="day-progress">0/6 = 0%</span>
               </summary>
               <div class="slots">
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">06-08</span> GitHub Pages: Create portfolio site
+                  <span class="time">6:00 AM - 8:00 AM</span> GitHub Pages: Create portfolio site
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">08-10</span> Add: Projects, Skills, Contact
+                  <span class="time">8:00 AM - 10:00 AM</span> Add: Projects, Skills, Contact
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">10-12</span> Add: Loom video embeds
+                  <span class="time">10:00 AM - 12:00 PM</span> Add: Loom video embeds
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">13-15</span> Buy domain OR use github.io link
+                  <span class="time">1:00 PM - 3:00 PM</span> Buy domain OR use github.io link
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">15-17</span> Share portfolio on LinkedIn
+                  <span class="time">3:00 PM - 5:00 PM</span> Share portfolio on LinkedIn
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">17-18</span> Plan Day 22
+                  <span class="time">5:00 PM - 6:00 PM</span> Plan Day 22
                 </label>
                 </div>
             </details>
@@ -1129,44 +1164,91 @@
             <details class="day-folder ">
               <summary>
                 <span class="folder-icon">📁</span>
-                Day 22: Apply Sprint
+                Day 22: Apply Sprint : Saturday
+                
                 <span class="day-progress">0/6 = 0%</span>
               </summary>
               <div class="slots">
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">06-08</span> Apply: 5 jobs Naukri
+                  <span class="time">6:00 AM - 8:00 AM</span> Apply: 5 jobs Naukri
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">08-10</span> Apply: 5 jobs LinkedIn
+                  <span class="time">8:00 AM - 10:00 AM</span> Apply: 5 jobs LinkedIn
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">10-12</span> Message 3 recruiters on LinkedIn
+                  <span class="time">10:00 AM - 12:00 PM</span> Message 3 recruiters on LinkedIn
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">13-15</span> Tailor resume for 1 job
+                  <span class="time">1:00 PM - 3:00 PM</span> Tailor resume for 1 job
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">15-17</span> Track applications in spreadsheet
+                  <span class="time">3:00 PM - 5:00 PM</span> Track applications in spreadsheet
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">17-18</span> Plan Day 23
+                  <span class="time">5:00 PM - 6:00 PM</span> Plan Day 23
+                </label>
+                </div>
+            </details>
+            
+            <details class="day-folder  sunday">
+              <summary>
+                <span class="folder-icon">📁</span>
+                Day 23: Mock Interview : Sunday
+                <span class="rest-tag">Rest Day</span>
+                <span class="day-progress">0/6 = 0%</span>
+              </summary>
+              <div class="slots">
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">6:00 AM - 8:00 AM</span> Full mock: 30min with friend/ChatGPT voice
+                </label>
+                
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">8:00 AM - 10:00 AM</span> Review recording + note gaps
+                </label>
+                
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">10:00 AM - 12:00 PM</span> Fix gaps: Study weak topics 2hr
+                </label>
+                
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">1:00 PM - 3:00 PM</span> Update LinkedIn posts with learnings
+                </label>
+                
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">3:00 PM - 5:00 PM</span> Send 5 connection requests
+                </label>
+                
+                <label class="slot">
+                  <input type="checkbox"  disabled>
+                  <span class="checkmark"></span>
+                  <span class="time">5:00 PM - 6:00 PM</span> Plan Day 24
                 </label>
                 </div>
             </details>
@@ -1174,89 +1256,45 @@
             <details class="day-folder ">
               <summary>
                 <span class="folder-icon">📁</span>
-                Day 23: Mock Interview
+                Day 24: 30-Day Ship : Monday
+                
                 <span class="day-progress">0/6 = 0%</span>
               </summary>
               <div class="slots">
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">06-08</span> Full mock: 30min with friend/ChatGPT voice
+                  <span class="time">6:00 AM - 8:00 AM</span> Final GitHub push: All notes clean
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">08-10</span> Review recording + note gaps
+                  <span class="time">8:00 AM - 10:00 AM</span> Record '30 Day Journey' Loom recap
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">10-12</span> Fix gaps: Study weak topics 2hr
+                  <span class="time">10:00 AM - 12:00 PM</span> LinkedIn: Post recap + thank supporters
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">13-15</span> Update LinkedIn posts with learnings
+                  <span class="time">1:00 PM - 3:00 PM</span> Plan Month 2: Certs or Job focus
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">15-17</span> Send 5 connection requests
+                  <span class="time">3:00 PM - 5:00 PM</span> Celebrate: You shipped 30 days
                 </label>
                 
                 <label class="slot">
                   <input type="checkbox"  disabled>
                   <span class="checkmark"></span>
-                  <span class="time">17-18</span> Plan Day 24
-                </label>
-                </div>
-            </details>
-            
-            <details class="day-folder ">
-              <summary>
-                <span class="folder-icon">📁</span>
-                Day 24: 30-Day Ship
-                <span class="day-progress">0/6 = 0%</span>
-              </summary>
-              <div class="slots">
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">06-08</span> Final GitHub push: All notes clean
-                </label>
-                
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">08-10</span> Record '30 Day Journey' Loom recap
-                </label>
-                
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">10-12</span> LinkedIn: Post recap + thank supporters
-                </label>
-                
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">13-15</span> Plan Month 2: Certs or Job focus
-                </label>
-                
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">15-17</span> Celebrate: You shipped 30 days
-                </label>
-                
-                <label class="slot">
-                  <input type="checkbox"  disabled>
-                  <span class="checkmark"></span>
-                  <span class="time">17-18</span> Rest
+                  <span class="time">5:00 PM - 6:00 PM</span> Rest
                 </label>
                 </div>
             </details>
