@@ -20,8 +20,8 @@ def format_time_slot(time_str):
     except:
         return time_str
 
-def get_day_name(date_str):
-    """Get Monday, Tuesday, etc from 2026-04-25"""
+def get_day_info(date_str):
+    """Get day name from date"""
     try:
         date_obj = datetime.strptime(date_str, '%Y-%m-%d')
         return date_obj.strftime('%A')
@@ -32,29 +32,46 @@ def build_site():
     with open('progress.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
 
+    all_days = []
+    day_counter = 1
+    
+    for week in data['weeks']:
+        for date, day_data in week['days'].items():
+            day_name = get_day_info(date)
+            
+            all_days.append({
+                'date': date,
+                'day_num': day_counter,
+                'day_name': day_name,
+                'title': day_data['title'],
+                'slots': day_data['slots'],
+                'completed': day_data.get('completed', False)
+            })
+            day_counter += 1
+
     weeks_html = ""
-    total_days = 0
+    total_days = len(all_days)
     completed_days = 0
     total_slots = 0
     completed_slots = 0
 
-    for w_idx, week in enumerate(data['weeks'], 1):
+    # Group into weeks of 7 days
+    for week_start in range(0, total_days, 7):
+        week_days = all_days[week_start:week_start + 7]
         days_html = ""
         week_completed_days = 0
-        week_total_days = len(week['days'])
+        week_total_days = len(week_days)
+        w_idx = (week_start // 7) + 1
         
-        for date, day_data in week['days'].items():
-            total_days += 1
+        for day in week_days:
             slots_html = ""
             all_slots_done = True
             day_completed_slots = 0
             day_total_slots = 0
-            
-            day_name = get_day_name(date)
-            is_sunday = day_name == 'Sunday'
+            is_sunday = day['day_name'] == 'Sunday'
             rest_tag = '<span class="rest-tag">Rest Day</span>' if is_sunday else ''
 
-            for time, slot in day_data['slots'].items():
+            for time, slot in day['slots'].items():
                 if isinstance(slot, dict):
                     task = slot['task']
                     done = slot.get('done', False)
@@ -88,11 +105,12 @@ def build_site():
             day_class = 'completed' if all_slots_done else ''
             day_class += ' sunday' if is_sunday else ''
             
+            # Format: Day 1 (Saturday) : Setup
             days_html += f'''
             <details class="day-folder {day_class}">
               <summary>
                 <span class="folder-icon">📁</span>
-                {day_data['title']} : {day_name}
+                Day {day['day_num']} ({day['day_name']}) : {day['title']}
                 {rest_tag}
                 <span class="day-progress">{day_completed_slots}/{day_total_slots} = {day_percent}%</span>
               </summary>
