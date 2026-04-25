@@ -13,7 +13,15 @@
 Update this daily. Commit with message: `Day X: Completed`
 
 ### WEEK 1: FOUNDATION + TOOLS
-- [ ] **Day 1 - Apr 25 Sat**: Git + Kali + CCNA + Linux basics + First repo
+#### Day 1 - Apr 25 Sat: Git + Kali + CCNA + Linux basics + First repo
+- [x] 06-08: Install Git + GitHub. Watch NetworkChuck Git video
+- [x] 08-10: Install VirtualBox + Kali Linux ISO. Boot VM
+- [ ] 10-12: CCNA Revise: OSI, TCP/IP, Subnetting. 1-page notes saved as ccna-day1.txt
+- [ ] 13-15: Linux commands in Kali: pwd,ls,cd,mkdir,rm,cp,mv. Screenshot taken
+- [ ] 15-17: Create repo network-notes. Push CCNA notes to GitHub 
+- [ ] 17-18: LinkedIn headline updated + Day 1 proof post published
+- [ ] **Day 1 Complete**: All 6 subtasks above done → Tick this when done
+
 - [ ] **Day 2 - Apr 26 Sun**: Rest + SOC research + Why cyber 5 lines
 - [ ] **Day 3 - Apr 27 Mon**: IPv4/IPv6 + Wireshark + Nmap + Naukri + Resume draft
 - [ ] **Day 4 - Apr 28 Tue**: Linux users + VLAN/ACL + Nmap router + Git + LinkedIn About
