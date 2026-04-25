@@ -13,7 +13,7 @@
             "10-12": {"task": "CCNA Revise: OSI, TCP/IP, Subnetting. 1-page notes", "done": true},
             "13-15": {"task": "Linux: pwd,ls,cd,mkdir,rm,cp,mv in Kali", "done": true},
             "15-17": {"task": "Create repo network-notes. Push CCNA notes", "done": true},
-            "17-18": {"task": "Plan Day 2. Change LinkedIn headline", "done": false}
+            "17-18": {"task": "Plan Day 2. Change LinkedIn headline", "done": true}
           }
         },
         "2026-04-26": {
