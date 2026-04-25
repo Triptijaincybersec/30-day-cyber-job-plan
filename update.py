@@ -73,4 +73,7 @@ def build_site():
     print(f"Done. Site rebuilt. {completed_days}/{total_days} days complete = {percent}%")
 
 if __name__ == "__main__":
-    build_site()
+   
+   build_site()
+   
+   

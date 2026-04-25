@@ -6,17 +6,18 @@
       "week": 1,
       "theme": "Foundation + Tools",
       "days": {
-        "2026-04-25": {
-          "title": "Day 1: Setup",
-          "slots": {
-            "06-08": "Install Git + GitHub. Watch NetworkChuck Git video",
-            "08-10": "Install VirtualBox + Kali Linux ISO. Boot VM",
-            "10-12": "CCNA Revise: OSI, TCP/IP, Subnetting. 1-page notes",
-            "13-15": "Linux: pwd,ls,cd,mkdir,rm,cp,mv in Kali",
-            "15-17": "Create repo network-notes. Push CCNA notes",
-            "17-18": "Plan Day 2. Change LinkedIn headline"
-          }
-        },
+       "2026-04-25": {
+  "title": "Day 1: Setup",
+  "completed": false,
+  "slots": {
+    "06-08": {"task": "Install Git + GitHub. Watch NetworkChuck Git video", "done": true},
+    "08-10": {"task": "Install VirtualBox + Kali Linux ISO. Boot VM", "done": true},
+    "10-12": {"task": "CCNA Revise: OSI, TCP/IP, Subnetting. 1-page notes", "done": false},
+    "13-15": {"task": "Linux: pwd,ls,cd,mkdir,rm,cp,mv in Kali", "done": false},
+    "15-17": {"task": "Create repo network-notes. Push CCNA notes", "done": false},
+    "17-18": {"task": "Plan Day 2. Change LinkedIn headline", "done": false}
+  }
+},
         "2026-04-26": {"title": "Day 2: Rest", "slots": {"06-08": "Rest", "08-10": "YouTube: SOC Analyst day in life", "13-15": "Write 5 lines: Why cyber for SOP", "15-17": "Revise Linux commands", "17-18": "Week 1 review"}},
         "2026-04-27": {"title": "Day 3: Network + Tools", "slots": {"06-08": "IPv4 vs IPv6, NAT, DHCP", "08-10": "Wireshark: capture wifi, find DNS/HTTP", "10-12": "Nmap: scan localhost", "13-15": "Naukri new profile", "15-17": "Resume draft in Docs", "17-18": "Apply 2 IT Support jobs"}},
         "2026-04-28": {"title": "Day 4: Linux + CCNA", "slots": {"06-08": "Linux: users,sudo,chmod,chown", "08-10": "CCNA: VLAN,ACL,RIP,OSPF", "10-12": "Nmap: scan router -sV", "13-15": "Git: nmap-scans repo push", "15-17": "LinkedIn About section", "17-18": "Apply 3 Network Engineer"}},
