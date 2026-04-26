@@ -22,8 +22,8 @@
           "slots": {
             "09-11": {"task": "Sleep in + Light review of week", "done": true},
             "11-13": {"task": "YouTube: 'A Day in Life of SOC Analyst' - 3 notes", "done": true},
-            "15-17": {"task": "Research 3 cyber roles: SOC L1, IT Support, NOC", "done": false},
-            "17-19": {"task": "Write 5 lines: Why cybersecurity for LinkedIn", "done": false}
+            "15-17": {"task": "Research 3 cyber roles: SOC L1, IT Support, NOC", "done": true},
+            "17-19": {"task": "Write 5 lines: Why cybersecurity for LinkedIn", "done": true}
            
                      }
         },
