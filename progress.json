@@ -23,8 +23,9 @@
             "09-11": {"task": "Sleep in + Light review of week", "done": true},
             "11-13": {"task": "YouTube: 'A Day in Life of SOC Analyst' - 3 notes", "done": false},
             "15-17": {"task": "Research 3 cyber roles: SOC L1, IT Support, NOC", "done": false},
-            "17-19": {"task": "Write 5 lines: Why cybersecurity for LinkedIn", "done": false}
-          }
+            "17-19": {"task": "Write 5 lines: Why cybersecurity for LinkedIn", "done": false},
+            "19-20": {"task": "Bonus: Job market recon - Save 5 SOC posts + list tools", "done": false}
+                     }
         },
         "2026-04-27": {
           "title": "Linux + VLANs",
