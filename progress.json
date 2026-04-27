@@ -32,8 +32,8 @@
           "completed": false,
           "slots": {
             "06-08": {"task": "Linux: chmod, chown, grep, find, pipes |, >", "done": true},
-            "08-10": {"task": "CCNA: VLANs, Trunking, Inter-VLAN routing", "done": false},
-            "10-12": {"task": "Packet Tracer: Create 2 VLANs + router", "done": false},
+            "08-10": {"task": "CCNA: VLANs, Trunking, Inter-VLAN routing", "done": true},
+            "10-12": {"task": "Packet Tracer: Create 2 VLANs + router", "done": true},
             "13-15": {"task": "Git: branch, merge, pull request practice", "done": false},
             "15-17": {"task": "Update LinkedIn About section draft", "done": false},
             "17-18": {"task": "Plan Day 4", "done": false}
