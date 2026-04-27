@@ -31,7 +31,7 @@
           "title": "Linux + VLANs",
           "completed": false,
           "slots": {
-            "06-08": {"task": "Linux: chmod, chown, grep, find, pipes |, >", "done": false},
+            "06-08": {"task": "Linux: chmod, chown, grep, find, pipes |, >", "done": true},
             "08-10": {"task": "CCNA: VLANs, Trunking, Inter-VLAN routing", "done": false},
             "10-12": {"task": "Packet Tracer: Create 2 VLANs + router", "done": false},
             "13-15": {"task": "Git: branch, merge, pull request practice", "done": false},
