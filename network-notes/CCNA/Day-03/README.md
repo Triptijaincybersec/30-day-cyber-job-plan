@@ -20,25 +20,35 @@
 
 \*\*Key Commands\*\* :
 
-vlan 10
+\-vlan 10
 
-&#x20;name USERS
+&#x20; name USERS
 
-vlan 20
+\-vlan 20
 
-&#x20;name SERVERS
+&#x20; name SERVERS
 
-int fa0/3
+\-int fa0/3
 
-&#x20;switchport mode trunk
+&#x20; switchport mode trunk
 
-&#x20;switchport trunk allowed vlan 10,20
+&#x20; switchport trunk allowed vlan 10,20
 
-int fa0/0.10
 
-&#x20;encapsulation dot1Q
 
-&#x20;ip address 192.168.10.1 255.255.255.0 
+
+
+\-int fa0/0.10
+
+&#x20;encapsulation dot1Q 10
+
+&#x20;ip address 192.168.10.1 255.255.255.0
+
+\-int fa0/0.20
+
+&#x20;encapsulation dot1Q 20
+
+&#x20;ip address 192.168.20.1 255.255.255.0
 
 
 
@@ -53,7 +63,7 @@ int fa0/0.10
 
 
 
-\*\*Proof\*\*: 
+\*\*Proof\*\*:
 
 !\[PC0 TO VLAN 20 Gateway](../../screenshots/Day-03/day3-pc0-to-vlan20.png)
 
@@ -66,6 +76,4 @@ int fa0/0.10
 \*\*SOC Relevance\*\*: Mirrors real incident where VLAN misconfiguration or NAC/802.1X blocks legitimate traffic.
 
 &#x20;
-
-
 
