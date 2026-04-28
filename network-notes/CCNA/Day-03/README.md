@@ -65,11 +65,11 @@
 
 \*\*Proof\*\*:
 
+\*\*Proof\*\*:
+
 !\[PC0 TO VLAN 20 Gateway](../../screenshots/Day-03/day3-pc0-to-vlan20.png)
 
 !\[PC1 TO VLAN 10 Gateway](../../screenshots/Day-03/day3-pc1-to-vlan10.png)
-
-
 
 
 
